@@ -20,10 +20,7 @@ public class SecureDisplayButton: UIButton {
         super.awakeFromNib()
         self.setImage(UIImage(named: "button.text.plain"), for: .normal)
     }
-    
-    // MARK: - METHODS
-    public func setTextField(textfield: UITextField) { theTextField = textfield }
-    
+        
     public func toggle() {
         
         isSecureEntry = !isSecureEntry
