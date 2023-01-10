@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "colormanager",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/roger-vogel/ColorManager.git",
+      "state" : {
+        "revision" : "2f7e9eeaad45c0c5f4b686ffe94f2917382269c9",
+        "version" : "1.0.0"
+      }
+    },
+    {
+      "identity" : "extensions",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/roger-vogel/Extensions.git",
+      "state" : {
+        "revision" : "7fccdea8863bd1e2e8ff2783337c034fabb4ed3c",
+        "version" : "1.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}
