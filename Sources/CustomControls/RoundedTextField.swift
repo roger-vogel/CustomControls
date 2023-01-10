@@ -27,3 +27,45 @@ public class RoundedTextField: UITextField {
         self.roundAllCorners(value: 8)
     }
 }
+
+public class RoundedTextFieldRight: UITextField {
+    
+    // MARK: -  INITIALIZATION
+    public override func awakeFromNib() {
+        
+        super.awakeFromNib()
+      
+        // Set left padding
+        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.frame.height))
+        self.leftViewMode = .always
+      
+        // Set right padding
+        self.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.frame.height))
+        self.rightViewMode = .always
+        
+        // Round text field corners
+        self.roundCorners(corners: .right)
+    }
+    
+}
+
+public class RoundedTextFieldLeft: UITextField {
+    
+    // MARK: -  INITIALIZATION
+    public override func awakeFromNib() {
+        
+        super.awakeFromNib()
+      
+        // Set left padding
+        self.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.frame.height))
+        self.leftViewMode = .always
+      
+        // Set right padding
+        self.rightView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.frame.height))
+        self.rightViewMode = .always
+        
+        // Round text field corners
+        self.roundCorners(corners: .left)
+    }
+    
+}
