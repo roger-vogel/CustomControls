@@ -7,6 +7,7 @@
 
 import UIKit
 import ColorManager
+import Extensions
 
 public class RoundedButton: UIButton {
     
@@ -14,6 +15,26 @@ public class RoundedButton: UIButton {
     public override func awakeFromNib() {
         
         roundAllCorners(value: 10)
+        super.awakeFromNib()
+    }
+}
+
+public class RoundedButtonLeft: UIButton {
+    
+    // MARK: -  INITIALIZATION
+    public override func awakeFromNib() {
+        
+        roundCorners(corners: .left, radius: 10)
+        super.awakeFromNib()
+    }
+}
+
+public class RoundedButtonRight: UIButton {
+    
+    // MARK: -  INITIALIZATION
+    public override func awakeFromNib() {
+        
+        roundCorners(corners: .right, radius: 10)
         super.awakeFromNib()
     }
 }
