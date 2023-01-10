@@ -8,10 +8,10 @@
 import UIKit
 import ColorManager
 
-class RoundedButton: UIButton {
+public class RoundedButton: UIButton {
     
     // MARK: -  INITIALIZATION
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         
         roundAllCorners(value: 10)
         super.awakeFromNib()

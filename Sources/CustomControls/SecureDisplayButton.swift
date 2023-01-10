@@ -8,23 +8,23 @@
 import UIKit
 import Extensions
 
-class SecureDisplayButton: UIButton {
+public class SecureDisplayButton: UIButton {
 
     // MARK: - PROPERTES
-    var theTextField: UITextField?
-    var isSecureEntry: Bool = true
+    public var theTextField: UITextField?
+    public var isSecureEntry: Bool = true
     
     // MARK: - INITIALIZATION
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
        
         super.awakeFromNib()
         self.setImage(UIImage(named: "button.text.plain"), for: .normal)
     }
     
     // MARK: - METHODS
-    func setTextField(textfield: UITextField) { theTextField = textfield }
+    public func setTextField(textfield: UITextField) { theTextField = textfield }
     
-    func toggle() {
+    public func toggle() {
         
         isSecureEntry = !isSecureEntry
         

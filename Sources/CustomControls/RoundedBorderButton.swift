@@ -9,10 +9,10 @@ import UIKit
 import ColorManager
 import Extensions
 
-class RoundedBorderButton: UIButton {
+public class RoundedBorderButton: UIButton {
 
     // MARK: -  INITIALIZATION
-    override func awakeFromNib() {
+    public override func awakeFromNib() {
         
         self.setBorder(width: 1.0, color: UIColor.darkGray.cgColor)
         roundAllCorners(value: 10)
