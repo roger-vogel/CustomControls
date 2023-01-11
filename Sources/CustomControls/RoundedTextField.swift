@@ -8,7 +8,7 @@
 import UIKit
 import Extensions
 
-public class RoundedTextFieldAll: UITextField {
+public class RoundedTextField: UITextField {
 
     // MARK: -  INITIALIZATION
     public override func awakeFromNib() {
