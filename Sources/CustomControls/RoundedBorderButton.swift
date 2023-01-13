@@ -24,6 +24,8 @@ public class RoundedBorderButton: UIButton {
         
         self.setBorder(width: 1.0, color: color.cgcolor)
     }
+    
+    public func setRadius(value: CGFloat) { roundAllCorners(value: value) }
 }
 
 public class RoundedBorderButtonLeft: UIButton {
@@ -41,6 +43,8 @@ public class RoundedBorderButtonLeft: UIButton {
         
         self.setBorder(width: 1.0, color: color.cgcolor)
     }
+    
+    public func setRadius(value: CGFloat) { roundAllCorners(value: value) }
 }
 
 public class RoundedBorderButtonRight: UIButton {
@@ -58,4 +62,6 @@ public class RoundedBorderButtonRight: UIButton {
         
         self.setBorder(width: 1.0, color: color.cgcolor)
     }
+    
+    public func setRadius(value: CGFloat) { roundAllCorners(value: value) }
 }

@@ -17,6 +17,8 @@ public class RoundedButton: UIButton {
         roundAllCorners(value: 10)
         super.awakeFromNib()
     }
+    
+    public func setRadius(value: CGFloat) { roundAllCorners(value: value) }
 }
 
 public class RoundedButtonLeft: UIButton {
@@ -27,6 +29,8 @@ public class RoundedButtonLeft: UIButton {
         roundCorners(corners: .left, radius: 10)
         super.awakeFromNib()
     }
+    
+    public func setRadius(value: CGFloat) { roundAllCorners(value: value) }
 }
 
 public class RoundedButtonRight: UIButton {
@@ -37,4 +41,6 @@ public class RoundedButtonRight: UIButton {
         roundCorners(corners: .right, radius: 10)
         super.awakeFromNib()
     }
+    
+    public func setRadius(value: CGFloat) { roundAllCorners(value: value) }
 }
