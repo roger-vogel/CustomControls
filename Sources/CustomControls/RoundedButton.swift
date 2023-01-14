@@ -14,7 +14,7 @@ public class RoundedButton: UIButton {
     // MARK: -  INITIALIZATION
     public override func awakeFromNib() {
         
-        roundAllCorners(value: 10)
+        roundAllCorners(value: 5)
         super.awakeFromNib()
     }
     
@@ -26,7 +26,7 @@ public class RoundedButtonLeft: UIButton {
     // MARK: -  INITIALIZATION
     public override func awakeFromNib() {
         
-        roundCorners(corners: .left, radius: 10)
+        roundCorners(corners: .left, radius: 5)
         super.awakeFromNib()
     }
     
@@ -38,7 +38,7 @@ public class RoundedButtonRight: UIButton {
     // MARK: -  INITIALIZATION
     public override func awakeFromNib() {
         
-        roundCorners(corners: .right, radius: 10)
+        roundCorners(corners: .right, radius: 5)
         super.awakeFromNib()
     }
     

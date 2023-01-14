@@ -15,7 +15,7 @@ public class RoundedBorderButton: UIButton {
     public override func awakeFromNib() {
         
         self.setBorder(width: 1.0, color: UIColor.darkGray.cgColor)
-        roundAllCorners(value: 10)
+        roundAllCorners(value: 5)
       
         super.awakeFromNib()
     }
@@ -34,7 +34,7 @@ public class RoundedBorderButtonLeft: UIButton {
     public override func awakeFromNib() {
         
         self.setBorder(width: 1.0, color: UIColor.darkGray.cgColor)
-        roundCorners(corners: .left, radius: 10)
+        roundCorners(corners: .left, radius: 5)
       
         super.awakeFromNib()
     }
@@ -53,7 +53,7 @@ public class RoundedBorderButtonRight: UIButton {
     public override func awakeFromNib() {
         
         self.setBorder(width: 1.0, color: UIColor.darkGray.cgColor)
-        roundCorners(corners: .right, radius: 10)
+        roundCorners(corners: .right, radius: 5)
       
         super.awakeFromNib()
     }
