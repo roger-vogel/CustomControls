@@ -9,7 +9,7 @@ import UIKit
 import ColorManager
 import Extensions
 
-public class RoundedBorderButton: UIButton {
+public class RoundedBorderedButton: UIButton {
 
     // MARK: -  INITIALIZATION
     public override func awakeFromNib() {
@@ -28,7 +28,7 @@ public class RoundedBorderButton: UIButton {
     public func setRadius(value: CGFloat) { roundAllCorners(value: value) }
 }
 
-public class RoundedBorderButtonLeft: UIButton {
+public class RoundedBorderedButtonLeft: UIButton {
 
     // MARK: -  INITIALIZATION
     public override func awakeFromNib() {
@@ -47,7 +47,7 @@ public class RoundedBorderButtonLeft: UIButton {
     public func setRadius(value: CGFloat) { roundAllCorners(value: value) }
 }
 
-public class RoundedBorderButtonRight: UIButton {
+public class RoundedBorderedButtonRight: UIButton {
 
     // MARK: -  INITIALIZATION
     public override func awakeFromNib() {
