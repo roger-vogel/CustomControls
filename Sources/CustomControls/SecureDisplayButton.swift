@@ -23,7 +23,7 @@ public class SecureDisplayButton: UIButton {
     }
     
     // MARK: - METHODS
-    public func setTextField(textfields: [UITextField]) { theTextFields = textfields }
+    public func setTextFields(textfields: [UITextField]) { theTextFields = textfields }
     
     public func toggle() {
         
