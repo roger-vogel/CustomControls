@@ -11,7 +11,7 @@ import Extensions
 public class SecureDisplayButton: UIButton {
 
     // MARK: - PROPERTES
-    public var theTextField: UITextField?
+    public var theTextFields: [UITextField]?
     public var isSecureEntry: Bool = true
     
     // MARK: - INITIALIZATION
@@ -23,7 +23,7 @@ public class SecureDisplayButton: UIButton {
     }
     
     // MARK: - METHODS
-    public func setTextField(textfield: UITextField) { theTextField = textfield }
+    public func setTextField(textfields: [UITextField]) { theTextFields = textfields }
     
     public func toggle() {
         
@@ -32,6 +32,6 @@ public class SecureDisplayButton: UIButton {
         if isSecureEntry { self.setImage(UIImage(named: "button.text.plain"), for: .normal) }
         else { self.setImage(UIImage(named: "button.text.secure"), for: .normal) }
         
-        theTextField!.isSecureTextEntry = isSecureEntry
+        for field in theTextFields! { field.isSecureTextEntry = isSecureEntry }
     }
 }
